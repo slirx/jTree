@@ -1,8 +1,8 @@
-#jTree
+# jTree
 
-#####Simple tree view
-=====
-Documentation
+Simple tree view
+
+## Documentation
 ```javascript
 $(function() {
   	$("#tree_view").jTree();

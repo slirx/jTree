@@ -1,0 +1,25 @@
+.city {
+    margin-left: 15px;
+    font-weight: normal;
+}
+
+.city a {
+    text-decoration: none;
+    color: black;
+}
+
+.city a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    cursor: pointer;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+.active {
+    font-weight: bold;
+}

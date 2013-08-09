@@ -1,6 +1,6 @@
 #jTree
 
-Simple tree view
+#####Simple tree view
 =====
 Documentation
 ```javascript

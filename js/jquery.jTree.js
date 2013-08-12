@@ -16,7 +16,7 @@
         // hide all
         this.find(".literal .list").hide(0);
 
-        this.find(".title").click(function(event) {
+        this.find(".title").click(function() {
 
             $(this).parent().parent().find(".title").removeClass("expanded");
 

@@ -16,7 +16,11 @@
         // hide all
         this.find(".literal .list").hide(0);
 
-        this.find(".title").click(function() {
+        this.find(".title").click(function(event) {
+
+            $(this).parent().parent().find(".title").removeClass("expanded");
+
+            $(this).addClass("expanded");
 
             var el = $(this).parent();
 
@@ -28,9 +32,16 @@
         });
 
         if(this.find(".active .list").size() > 0)
-            this.find(".active .list").slideDown();
+        {
+            var el = this.find(".active .list");
+            el.slideDown();
+            el.parent().find(".title").addClass("expanded");
+        }
         else
+        {
             this.find(".list").first().slideDown();
+            this.find(".title").first().addClass("expanded");
+        }
 
         return this;
     };

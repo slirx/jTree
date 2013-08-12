@@ -7,7 +7,11 @@
 
 (function( $ ) {
 
-    $.fn.jTree = function() {
+    $.fn.jTree = function(options) {
+
+        var settings = $.extend({
+            hideTime : 500
+        }, options);
 
         // hide all
         this.find(".literal .list").hide(0);
@@ -17,7 +21,7 @@
             var el = $(this).parent();
 
             // hide all
-           el.parent().find(".list").slideUp(500);
+           el.parent().find(".list").slideUp(settings.hideTime);
 
             // show selected
             el.find(".list").slideDown();

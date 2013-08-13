@@ -18,6 +18,9 @@
 
         this.find(".title").click(function() {
 
+            if ($(this).hasClass("expanded"))
+                return false;
+
             $(this).parent().parent().find(".title").removeClass("expanded");
 
             $(this).addClass("expanded");
